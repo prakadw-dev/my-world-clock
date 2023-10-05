@@ -70,7 +70,7 @@ function updateCity(event) {
   )}</small></div>
   </div>
 
-  <a href="index.html" id="back-page">Back to homepage</a>
+  <a href="/" id="back-page">Back to homepage</a>
   `;
 }
 
