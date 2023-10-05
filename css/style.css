@@ -5,6 +5,14 @@ body {
 h1 {
   text-align: center;
   font-size: 38px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 150ms;
+}
+h1:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
 }
 h2 {
   margin: 0;
