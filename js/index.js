@@ -24,6 +24,29 @@ function updateTime() {
       "H:mm:ss [<small>]A[</small>]"
     );
   }
+
+  //Bali
+  let baliElement = document.querySelector("#bali");
+  if (baliElement) {
+    let baliDateElement = baliElement.querySelector(".date");
+    let baliTimeElement = baliElement.querySelector(".time");
+    let baliTime = moment.tz("Asia/Makassar");
+
+    baliDateElement.innerHTML = baliTime.format("MMMM Do, YYYY");
+    baliTimeElement.innerHTML = baliTime.format("H:mm:ss [<small>]A[</small>]");
+  }
+  //Paris
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment.tz("Europe/Paris");
+
+    parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
+      "H:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 updateTime();
 setInterval(updateTime, 1000);
@@ -46,6 +69,8 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+
+  <a href="index.html" id="back-page">Back to homepage</a>
   `;
 }
 
